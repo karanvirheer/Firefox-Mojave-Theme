@@ -18,6 +18,7 @@ const themes = {
   day: {
     images: {
       theme_frame: "mojave_day.jpg",
+      theme_frame: "mojave_smooth.png",
     },
 
     colors: {
@@ -26,13 +27,9 @@ const themes = {
       //===============
 
       // colour of taskbar items when you hover over
-      button_background_hover: "#F4E8D5",
-      button_background_hover: "#D2AF79", // -> potential
-      // button_background_hover: "#C2956B", // -> potential
       button_background_hover: "#c5a675",
 
       // taskbar icons
-      // icons: "#FFFF",
       icons: "#3E2F2F",
 
       // bookmark star in searchbar
@@ -42,22 +39,16 @@ const themes = {
       // Bookmark Colours
       //===============
 
-      // bookmark_text: "#efedeb",
-      bookmark_text: "#FFFF",
-      bookmark_text: "#F4E8D5",
       bookmark_text: "#F5F5F5",
-      // bookmark_text: "#F7D8A5",
-      // bookmark_text: "#E0E0E0",
-      // bookmark_text: "#F8E6C1",
 
       //===============
       // Tab Colours
       //===============
 
       // colour of text of tab names and bookmarks (ig?)
-      tab_background_text: "#efedeb",
+      tab_background_text: "#F5F5F5",
 
-      tab_loading: "#efedeb",
+      tab_loading: "#F5F5F5",
       tab_selected: "#8a633a",
 
       //===============
@@ -72,13 +63,13 @@ const themes = {
 
       // text colour of items highlighted inside popups
       // searchbar recommended links text colour
-      popup_highlight_text: "#FFF",
+      popup_highlight_text: "#F5F5F5",
 
       // text colour of when you hover over a tab
-      popup_text: "#FFF",
+      popup_text: "#F5F5F5",
 
       // bookmarked item > the colour of that menu border
-      popup_border: "#FFF",
+      popup_border: "#F5F5F5",
 
       //===============
       // Searchbar Colours
@@ -88,10 +79,10 @@ const themes = {
       toolbar: [0, 0, 0, 0], // Fully transparent toolbar
 
       // colour of the text in the toolbar (not typing)
-      toolbar_field_text: "#FFF",
+      toolbar_field_text: "#F5F5F5",
 
       // colour of the text in the toolbar (when typing)
-      toolbar_field_text_focus: "#FFF",
+      toolbar_field_text_focus: "#F5F5F5",
 
       // searchbar colour
       toolbar_field: "#dbcebe",
@@ -100,13 +91,13 @@ const themes = {
       toolbar_field_border: "#c89e67",
 
       // searchbar border colour (when typing)
-      toolbar_field_border_focus: "#FFF",
+      toolbar_field_border_focus: "#F5F5F5",
 
       // searchbar colour (when typing)
       toolbar_field_focus: "#dbcebe",
 
       // searchbar highlight colour
-      toolbar_field_highlight: "#FFF",
+      toolbar_field_highlight: "#F5F5F5",
 
       // searchbar highlight text colour
       toolbar_field_highlight_text: "#8a633a",
@@ -117,12 +108,12 @@ const themes = {
 
       // bookmarks manager // history sidebar colour
       sidebar: "#8a633a",
-      sidebar_border: "#FFF",
+      sidebar_border: "#F5F5F5",
 
-      sidebar_text: "#FFF",
+      sidebar_text: "#F5F5F5",
 
       sidebar_highlight: "#c89e67",
-      sidebar_highlight_text: "#FFF",
+      sidebar_highlight_text: "#F5F5F5",
 
       //===============
       // New Tab Page
@@ -134,7 +125,7 @@ const themes = {
   },
   night: {
     images: {
-      theme_frame: "mojave_night.jpg",
+      theme_frame: "mojave_upscaled.png",
     },
     colors: {
       //===============

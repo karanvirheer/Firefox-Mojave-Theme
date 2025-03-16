@@ -240,12 +240,11 @@ function checkTime() {
   let date = new Date();
   let hours = date.getHours();
   // Will set the sun theme between 8am and 8pm.
-  setTheme("night");
-  // if (hours > 8 && hours < 19) {
-  //   setTheme("day");
-  // } else {
-  //   setTheme("night");
-  // }
+  if (hours > 8 && hours < 20) {
+    setTheme("day");
+  } else {
+    setTheme("night");
+  }
 }
 
 // On start up, check the time to see what theme to show.

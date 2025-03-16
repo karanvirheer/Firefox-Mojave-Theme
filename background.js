@@ -17,8 +17,7 @@ let currentTheme = "";
 const themes = {
   day: {
     images: {
-      theme_frame: "mojave_day.jpg",
-      theme_frame: "mojave_smooth.png",
+      theme_frame: "mojave_day.png",
     },
 
     colors: {
@@ -125,15 +124,12 @@ const themes = {
   },
   night: {
     images: {
-      theme_frame: "mojave_upscaled.png",
+      theme_frame: "mojave_night.png",
     },
     colors: {
       //===============
       // Icon Colour
       //===============
-
-      // colour of taskbar items when you hover over
-      // button_background_hover: "#495261",
 
       // taskbar icons
       icons: "#efedeb",
@@ -244,7 +240,7 @@ function checkTime() {
   let date = new Date();
   let hours = date.getHours();
   // Will set the sun theme between 8am and 8pm.
-  setTheme("day");
+  setTheme("night");
   // if (hours > 8 && hours < 19) {
   //   setTheme("day");
   // } else {

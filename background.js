@@ -11,27 +11,130 @@ let currentTheme = "";
 // SKY = #dbcebe
 // DARK_SAND = #8a633a
 // LIGHT_SAND = #c89e67
+// DARKER_SAND = #735939
+// DARK_ESPRESSO = #3E2F2F
 
 const themes = {
   day: {
     images: {
       theme_frame: "mojave_day.jpg",
     },
+
     colors: {
-      frame: "#CF723F",
-      tab_background_text: "#111",
+      //===============
+      // Icon Colour
+      //===============
+
+      // colour of taskbar items when you hover over
+      button_background_hover: "#F4E8D5",
+      button_background_hover: "#D2AF79", // -> potential
+      // button_background_hover: "#C2956B", // -> potential
+      button_background_hover: "#c5a675",
+
+      // taskbar icons
+      // icons: "#FFFF",
+      icons: "#3E2F2F",
+
+      // bookmark star in searchbar
+      icons_attention: "#FF0",
+
+      //===============
+      // Bookmark Colours
+      //===============
+
+      // bookmark_text: "#efedeb",
+      bookmark_text: "#FFFF",
+      bookmark_text: "#F4E8D5",
+      bookmark_text: "#F5F5F5",
+      // bookmark_text: "#F7D8A5",
+      // bookmark_text: "#E0E0E0",
+      // bookmark_text: "#F8E6C1",
+
+      //===============
+      // Tab Colours
+      //===============
+
+      // colour of text of tab names and bookmarks (ig?)
+      tab_background_text: "#efedeb",
+
+      tab_loading: "#efedeb",
+      tab_selected: "#8a633a",
+
+      //===============
+      // Pop-Up Colours
+      //===============
+
+      // hover tab popup colour
+      popup: "#8a633a",
+
+      // selected URL in searchbar
+      popup_highlight: "#8a633a",
+
+      // text colour of items highlighted inside popups
+      // searchbar recommended links text colour
+      popup_highlight_text: "#FFF",
+
+      // text colour of when you hover over a tab
+      popup_text: "#FFF",
+
+      // bookmarked item > the colour of that menu border
+      popup_border: "#FFF",
+
+      //===============
+      // Searchbar Colours
+      //===============
+
+      // toolbar colour
+      toolbar: [0, 0, 0, 0], // Fully transparent toolbar
+
+      // colour of the text in the toolbar (not typing)
+      toolbar_field_text: "#FFF",
+
+      // colour of the text in the toolbar (when typing)
+      toolbar_field_text_focus: "#FFF",
+
+      // searchbar colour
+      toolbar_field: "#dbcebe",
+
+      // searchbar border colour (when not typing)
+      toolbar_field_border: "#c89e67",
+
+      // searchbar border colour (when typing)
+      toolbar_field_border_focus: "#FFF",
+
+      // searchbar colour (when typing)
+      toolbar_field_focus: "#dbcebe",
+
+      // searchbar highlight colour
+      toolbar_field_highlight: "#FFF",
+
+      // searchbar highlight text colour
+      toolbar_field_highlight_text: "#8a633a",
+
+      //===============
+      // Sidebar Border Colours
+      //===============
+
+      // bookmarks manager // history sidebar colour
+      sidebar: "#8a633a",
+      sidebar_border: "#FFF",
+
+      sidebar_text: "#FFF",
+
+      sidebar_highlight: "#c89e67",
+      sidebar_highlight_text: "#FFF",
+
+      //===============
+      // New Tab Page
+      //===============
+
+      ntp_background: "#8a633a",
+      ntp_card_background: "#dbcebe",
     },
   },
   night: {
     images: {
-      // theme_frame: "mojave_upscaled.png",
-      // theme_frame: "mojave_sharp.png",
       theme_frame: "mojave_night.jpg",
-      additional_backgrounds: ["1a2334.png"],
-    },
-    properties: {
-      additional_backgrounds_alignment: ["top"],
-      additional_backgrounds_tiling: ["no-repeat"],
     },
     colors: {
       //===============
@@ -108,19 +211,11 @@ const themes = {
       // searchbar colour (when typing)
       toolbar_field_focus: "#4d586e",
 
-      // ============================
-      // !!!!!!!!! TEST OUT !!!!!!!!!!!!
-      // ============================
-
       // searchbar highlight colour
       toolbar_field_highlight: "#efedeb",
 
       // searchbar highlight text colour
       toolbar_field_highlight_text: "#1a2334",
-
-      // ============================
-      // !!!!!!!!! TEST OUT !!!!!!!!!!!!
-      // ============================
 
       //===============
       // Sidebar Border Colours
@@ -141,10 +236,6 @@ const themes = {
 
       ntp_background: "#1a2334",
       ntp_card_background: "#4d586e",
-
-      //===============
-      // Random Shit
-      //===============
     },
   },
 };
@@ -162,7 +253,7 @@ function checkTime() {
   let date = new Date();
   let hours = date.getHours();
   // Will set the sun theme between 8am and 8pm.
-  setTheme("night");
+  setTheme("day");
   // if (hours > 8 && hours < 19) {
   //   setTheme("day");
   // } else {

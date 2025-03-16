@@ -39,7 +39,7 @@ const themes = {
       //===============
 
       // colour of taskbar items when you hover over
-      button_background_hover: "#495261",
+      // button_background_hover: "#495261",
 
       // taskbar icons
       icons: "#efedeb",
@@ -88,9 +88,7 @@ const themes = {
       //===============
 
       // toolbar colour
-      // commenting this out reveals the img transparency
-      // toolbar: "#1a2334",
-      // toolbar: "#4d586e",
+      toolbar: [0, 0, 0, 0], // Fully transparent toolbar
 
       // colour of the text in the toolbar (not typing)
       toolbar_field_text: "#efedeb",
@@ -147,7 +145,6 @@ const themes = {
       //===============
       // Random Shit
       //===============
-      toolbar: [0, 0, 0, 0], // Fully transparent toolbar
     },
   },
 };
@@ -165,7 +162,7 @@ function checkTime() {
   let date = new Date();
   let hours = date.getHours();
   // Will set the sun theme between 8am and 8pm.
-  setTheme("day");
+  setTheme("night");
   // if (hours > 8 && hours < 19) {
   //   setTheme("day");
   // } else {

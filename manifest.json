@@ -7,10 +7,5 @@
   "background": {
     "scripts": ["background.js"]
   },
-  "version": "1.0",
-  "browser_specific_settings": {
-    "gecko": {
-      "strict_min_version": "55.0a2"
-    }
-  }
+  "version": "1.0"
 }

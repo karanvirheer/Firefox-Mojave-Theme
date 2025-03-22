@@ -17,7 +17,7 @@ let currentTheme = "";
 const themes = {
   day: {
     images: {
-      theme_frame: "mojave_day.png",
+      theme_frame: "mojave_day.svg",
     },
 
     colors: {
@@ -38,17 +38,19 @@ const themes = {
       // Bookmark Colours
       //===============
 
-      bookmark_text: "#F5F5F5",
+      bookmark_text: "#3E2F2F",
 
       //===============
       // Tab Colours
       //===============
 
       // colour of text of tab names and bookmarks (ig?)
-      tab_background_text: "#F5F5F5",
+      tab_background_text: "#3E2F2F",
+      tab_text: "#F5F5F5",
 
       tab_loading: "#F5F5F5",
       tab_selected: "#8a633a",
+      // tab_selected: "#dbcebe",
 
       //===============
       // Pop-Up Colours
@@ -71,20 +73,32 @@ const themes = {
       popup_border: "#F5F5F5",
 
       //===============
-      // Searchbar Colours
+      // Toolbar Colours
       //===============
 
       // toolbar colour
-      toolbar: [0, 0, 0, 0], // Fully transparent toolbar
+      toolbar: "rgba(0, 0, 0, 0)", // Fully transparent toolbar
+      toolbar_top_separator: "rgba(0, 0, 0, 0)",
+      toolbar_bottom_separator: "rgba(0, 0, 0, 0)",
+      frame: "rgba(0, 0, 0, 0)",
+
+      //===============
+      // Searchbar Colours
+      //===============
+
+      // searchbar colour (not typing)
+      toolbar_field: "#dbcebe",
+
+      // searchbar colour (when typing)
+      toolbar_field_focus: "#dbcebe",
 
       // colour of the text in the toolbar (not typing)
       toolbar_field_text: "#F5F5F5",
+      toolbar_field_text: "#3E2F2F",
 
       // colour of the text in the toolbar (when typing)
       toolbar_field_text_focus: "#F5F5F5",
-
-      // searchbar colour
-      toolbar_field: "#dbcebe",
+      toolbar_field_text_focus: "#2A2A2A",
 
       // searchbar border colour (when not typing)
       toolbar_field_border: "#c89e67",
@@ -92,13 +106,10 @@ const themes = {
       // searchbar border colour (when typing)
       toolbar_field_border_focus: "#F5F5F5",
 
-      // searchbar colour (when typing)
-      toolbar_field_focus: "#dbcebe",
-
-      // searchbar highlight colour
+      // type in searchbar -> highlight the text -> highlight colour
       toolbar_field_highlight: "#F5F5F5",
 
-      // searchbar highlight text colour
+      // type in searchbar -> highlight the text -> text colour
       toolbar_field_highlight_text: "#8a633a",
 
       //===============
@@ -124,8 +135,9 @@ const themes = {
   },
   night: {
     images: {
-      theme_frame: "mojave_night.png",
+      theme_frame: "mojave_night.svg",
     },
+
     colors: {
       //===============
       // Icon Colour
@@ -178,7 +190,10 @@ const themes = {
       //===============
 
       // toolbar colour
-      toolbar: [0, 0, 0, 0], // Fully transparent toolbar
+      toolbar: "rgba(0, 0, 0, 0)", // Fully transparent toolbar
+      toolbar_top_separator: "rgba(0, 0, 0, 0)",
+      toolbar_bottom_separator: "rgba(0, 0, 0, 0)",
+      frame: "rgba(0, 0, 0, 0)",
 
       // colour of the text in the toolbar (not typing)
       toolbar_field_text: "#efedeb",
@@ -240,7 +255,7 @@ function checkTime() {
   let date = new Date();
   let hours = date.getHours();
   // Will set the sun theme between 8am and 8pm.
-  if (hours > 8 && hours < 20) {
+  if (hours > 8 && hours < 21) {
     setTheme("day");
   } else {
     setTheme("night");

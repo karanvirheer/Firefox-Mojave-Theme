@@ -1,6 +1,6 @@
 <div align="center">
 
-# Mojave Dynamic Theme Extension
+# MacOS Mojave Dynamic Theme Extension
 
 <a href="https://addons.mozilla.org/en-CA/firefox/addon/macos-mojave-dynamic-theme/">
   <img src="icons/Icon_96x96.png" alt="Logo" width="250">
@@ -10,9 +10,9 @@
 
 A simple MacOS inspired Mojave Dynamic Theme.
 
-[**Theme Download**](https://addons.mozilla.org/en-CA/firefox/addon/macos-mojave-dark-theme/)
+[**FireFox Theme Download**](https://addons.mozilla.org/en-CA/firefox/addon/macos-mojave-dynamic-theme/)
 
-<br /><br />
+<br />
 
 ## Screenshots
 
